@@ -19,4 +19,4 @@ jobs:
           run: stringa="sono una stringa a caso"
                echo "content=$stringa" >> $GITHUB_OUTPUT
         - name: read_output
-          run: echo "${{steps.varCreate.outputs.content}}"
+          run: echo '${{steps.varCreate.outputs.content}}'
