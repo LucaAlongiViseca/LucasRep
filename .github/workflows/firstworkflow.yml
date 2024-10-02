@@ -44,4 +44,12 @@ jobs:
           with:
               path: log.txt
               name: log_file
-          
+        - name: download_artifact
+          uses: actions/upload-artifact@v4
+          with:
+              path: log.txt
+        - name: Display structure of downloaded files
+          run: ls -R
+
+
+
