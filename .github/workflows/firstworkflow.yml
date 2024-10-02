@@ -1,0 +1,8 @@
+name: firstworkflow(manual)
+  on:[workflow_dispatch]
+  jobs:
+    print_hello:
+      runs-on: ubuntu_latest
+      step:
+        - name: print_hello_on_terminal_windows
+          run: echo 'Hello form first job!!!
