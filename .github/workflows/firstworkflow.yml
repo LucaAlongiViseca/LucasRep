@@ -39,7 +39,7 @@ jobs:
           run: |
               echo "${{steps.varCreate.outputs.content}}" > log.txt
               cat log.txt
-        - name: upload_artifacts
+        - name: upload_artifact
           uses: actions/upload_artifact@V4
           with:
               path: log.txt
