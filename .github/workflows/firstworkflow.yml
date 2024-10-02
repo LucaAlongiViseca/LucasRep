@@ -49,7 +49,9 @@ jobs:
           with:
               path: log.txt
         - name: Display structure of downloaded files
-          run: ls -R
+          run: |
+               ls -R
+               cat log.txt
 
 
 
