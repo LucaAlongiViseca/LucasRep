@@ -17,6 +17,6 @@ jobs:
         - name: create_variable
           id: varCreate
           run: stringa="sono una stringa a caso"
-               echo "content=$stringa">>$GITHUB_OUTPUT
+               echo "content=$stringa" >> $GITHUB_OUTPUT
         - name: read_output
           run: echo "${{steps.varCreate.outputs.content}}"
