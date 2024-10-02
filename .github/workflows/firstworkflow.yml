@@ -7,7 +7,7 @@ jobs:
         - name: print_hello_on_terminal_windows
           run: echo 'Hello form first job 2
     print_github_object:
-      runs-on: ubuntu-lastest
+      runs-on: ubuntu-latest
       steps:
         -name: print obj
          run: echo '${{toJson(github)}}'
