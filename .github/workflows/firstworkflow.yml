@@ -5,4 +5,4 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: print_hello_on_terminal_windows
-          run: echo 'Hello form first job'
+          run: echo 'Hello form first job 2'
