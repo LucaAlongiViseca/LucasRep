@@ -10,4 +10,4 @@ jobs:
       runs-on: ubuntu-lastest
       steps:
         -name: print obj
-         run: echo '${{github}}
+         run: echo '${{github}}'
