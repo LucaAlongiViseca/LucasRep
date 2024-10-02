@@ -1,5 +1,5 @@
 name: firstworkflow(manual)
-  on:[workflow_dispatch]
+  on: workflow_dispatch
   jobs:
     print_hello:
       runs-on: ubuntu_latest
