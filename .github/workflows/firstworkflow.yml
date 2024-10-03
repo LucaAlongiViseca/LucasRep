@@ -1,5 +1,12 @@
 name: firstworkflow(manual)
-on: push
+on: 
+    workflow_dispatch:
+    push:
+    # due condizini in and
+      branches:
+        - development
+      #paths:
+       # - '**.js'      
 env:
     FILE_PATH: log.txt
     FILE_NAME: log_file
