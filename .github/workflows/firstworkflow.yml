@@ -37,6 +37,7 @@ jobs:
               echo "${{steps.varCreate.outputs.content}}" > log.txt
               cat log.txt
     set-output2:
+      timeout-minutes: 1
       runs-on: windows-latest
       steps:
         - name: create_variable
