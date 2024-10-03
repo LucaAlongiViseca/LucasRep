@@ -46,9 +46,9 @@ jobs:
           uses: actions/upload-artifact@v4
           with:
               # path: log.txt
-              path: ${{var.FILE_PATH}}
+              path: ${{env.FILE_PATH}}
               # name: log_file
-              name: ${{var.FILE_NAME}}
+              name: ${{env.FILE_NAME}}
         - name: download_artifact
           uses: actions/upload-artifact@v4
           with:
