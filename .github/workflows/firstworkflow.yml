@@ -1,5 +1,8 @@
 name: firstworkflow(manual)
 on: push
+env:
+    FILE_PATH: log.txt
+    FILE_NAME: log_file
 jobs:
     print_hello:
       runs-on: ubuntu-latest
@@ -42,8 +45,10 @@ jobs:
         - name: upload_artifact
           uses: actions/upload-artifact@v4
           with:
-              path: log.txt
-              name: log_file
+              # path: log.txt
+              path: ${{var.FILE_PATH}}
+              # name: log_file
+              name: ${{var.FILE_NAME}}
         - name: download_artifact
           uses: actions/upload-artifact@v4
           with:
