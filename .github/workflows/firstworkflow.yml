@@ -23,6 +23,8 @@ jobs:
           run: echo '${{toJson(github.retention_days)}}'
     set-output:
       needs: [print_hello, print_github_object]
+      outputs:
+        message: ${{steps.varCreate.outputs.content}}
       runs-on: ubuntu-latest
       continue-on-error: true
       steps:
@@ -40,6 +42,7 @@ jobs:
     set-output2:
       timeout-minutes: 1
       runs-on: windows-latest
+      if: ${{failure() && needs.set-output.outputs.message == 'sono una stringa a caso'}}
       steps:
         - name: create_variable
           id: varCreate
