@@ -24,7 +24,7 @@ jobs:
     set-output:
       needs: [print_hello, print_github_object]
       runs-on: ubuntu-latest
-      continue-on-error: 'true'
+      continue-on-error: true
       steps:
         - name: create_variable
           id: varCreate
