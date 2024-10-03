@@ -2,7 +2,7 @@ name: firstworkflow(manual)
 on: 
     workflow_dispatch:
     push:
-    # due condizini in and
+    # due condizioni in and
       branches:
         - development
       #paths:
